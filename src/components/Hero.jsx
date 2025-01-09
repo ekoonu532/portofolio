@@ -5,43 +5,55 @@ import ShinyEffect from './ShinyEffect'
 
 const Hero = () => {
   return (
-    <div className="grid md:grid-cols-2 place-items-center max-w-[1250px] mx-auto mb-8 md:mb-32 mt-28">
-        <div className="max-w-[800px] ">
-            <p className="text-gray-200 md:text-6xl text-3xl tracking-tight">
-                HEY, I AM <br />
-                <span className="text-blue-200">EKO NUR</span> <br />
-                <TypeAnimation sequence={[
-                    "Developer",
-                    1000, 
-                    "Web Designer",
-                    1000,
-                    "Consultant",
-                    1000
-                ]}
-                speed={50}
-                repeat={Infinity}
-                className="font-bold italic"
-                />
-            </p>
-            <h2 className="text-gray-300 ">A Graduate from Information Systems</h2>
+    <div className='grid md:grid-cols-2 place-items-center max-w-[1250px] mx-auto mb-8 md:mb-32 mt-28'>
+      <div className='max-w-[800px] '>
+        <p className='text-gray-200 md:text-6xl text-3xl tracking-tight'>
+          HEY, I AM <br />
+          <span className='text-blue-200'>EKO NUR</span> <br />
+          <TypeAnimation
+            sequence={[
+              'Developer',
+              1000,
+              'Web Designer',
+              1000,
+              'System Analyst',
+              1000
+            ]}
+            speed={50}
+            repeat={Infinity}
+            className='font-bold italic'
+          />
+        </p>
+        <h2 className='text-gray-300 '>A Graduate from Information Systems</h2>
 
-            <div className="flex flex-row gap-4 mb-4 md:mb-0">
-                <button className="transform transition-transform hover:scale-105 hover:shadow-lg z-10 cursor-pointer font-bold text-gray-200 w-1/2 mt-6 p-2 bg-gradient-to-r from-[#50a7c7] via-[#1f7c8f] to-[#3d6ca4] rounded-xl">Download CV</button>
-                <button className="transform transition-transform hover:scale-105 hover:shadow-lg  z-10 cursor-pointer font-bold text-gray-200 w-1/2 mt-6 p-2 border border-gray-200 rounded-xl" onClick={() => document.getElementById("portofolio").scrollIntoView({ behavior: "smooth" })}>View Work</button>
-            </div>
+        <div className='flex flex-row gap-4 mb-4 md:mb-0'>
+          <a
+            href='https://drive.google.com/uc?export=download&id=1pCHd6oidc0l5sZuuKpNak8rDR4IcyvK7'
+            className='transform transition-transform hover:scale-105 hover:shadow-lg z-10 cursor-pointer font-bold text-gray-200 w-1/2 mt-6 p-2 bg-gradient-to-r from-[#50a7c7] via-[#1f7c8f] to-[#3d6ca4] rounded-xl text-center'
+          >
+            Download CV
+          </a>
 
+          <button
+            className='transform transition-transform hover:scale-105 hover:shadow-lg  z-10 cursor-pointer font-bold text-gray-200 w-1/2 mt-6 p-2 border border-gray-200 rounded-xl'
+            onClick={() =>
+              document
+                .getElementById('portofolio')
+                .scrollIntoView({ behavior: 'smooth' })
+            }
+          >
+            View Work
+          </button>
         </div>
-        <div className='absolute inset-0 overflow-hidden md:overflow-visible'>
-            <div className='hidden md:block'>
-
-        <ShinyEffect left={100} top={200} size={1600}/>
-
-            </div>
-            <ShinyEffect left={-100} top={0} size={1200}/>
-
+      </div>
+      <div className='absolute inset-0 overflow-hidden md:overflow-visible'>
+        <div className='hidden md:block'>
+          <ShinyEffect left={100} top={200} size={1600} />
         </div>
+        <ShinyEffect left={-100} top={0} size={1200} />
+      </div>
 
-        <img src={profilepic} alt="" className="w-[300px] md:w-[500px]"/>
+      <img src={profilepic} alt='' className='w-[300px] md:w-[500px]' />
     </div>
   )
 }
