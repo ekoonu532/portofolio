@@ -34,15 +34,6 @@ const projects = [
       github: '#'
     }, 
   },
-  {
-    img: project4,
-    title: 'Sistem Logbook Marketing',
-    description: 'Sistem logbook marketing ini mendukung pencatatan aktivitas pemasaran, laporan berbasis filter, dan kontrol akses berbasis peran. Dibangun dengan Laravel, Tailwind CSS, dan PostgreSQL, sistem ini scalable, responsif, dan stabil, dirancang untuk efisiensi dan kemudahan pengguna.',
-    links: {
-      site: '#',
-      github: '#'
-    }, 
-  }
 ]
 
 const Portofolio = () => {
