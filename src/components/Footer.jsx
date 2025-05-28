@@ -8,7 +8,7 @@ const Footer = () => {
         <div className='space-y-4'>
             <h3 className='text-2xl text-gray-200 font-semibold'>Eko Nur</h3>
             <div className='flex flex-row gap-6 text-gray-400 text-4xl'>
-                <a><FaGithubSquare /></a>
+                <a href='https://github.com/ekoonu532'><FaGithubSquare /></a>
                 <a><FaInstagram /></a>
             </div>
         </div>
