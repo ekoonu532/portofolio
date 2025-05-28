@@ -9,7 +9,7 @@ const Footer = () => {
             <h3 className='text-2xl text-gray-200 font-semibold'>Eko Nur</h3>
             <div className='flex flex-row gap-6 text-gray-400 text-4xl'>
                 <a href='https://github.com/ekoonu532'><FaGithubSquare /></a>
-                <a><FaInstagram /></a>
+                <a href='https://www.instagram.com/ekoonu_'><FaInstagram /></a>
             </div>
         </div>
 
